@@ -1,0 +1,29 @@
+<html>
+<head>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.9.1/bootstrap-table.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+  <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.9.1/bootstrap-table.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.9.1/locale/bootstrap-table-zh-CN.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#attendees').bootstrapTable({
+      url: 'attendees.json',
+      columns: [
+        {
+          field: 'name',
+          sortable: true,
+          title: 'GitHub account name'
+        },
+        {
+          field: 'email',
+          sortable: true,
+          title: 'Email address'
+        },
+      ] });
+    });
+  </script>
+</head>
+<body>
+  <table id="attendees" border="1"></table>
+</body>
+</html>

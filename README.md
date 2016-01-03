@@ -1,2 +1,2 @@
 # juhaszviktor.github.io
-syslog-ng universal registration PoC
+syslog-ng universe registration PoC
